@@ -12,6 +12,12 @@ def small_enough(array, limit):
             return False
     return True
 
+def small_enough_2(array, limit):
+    return max(array)<=limit
+
+def small_enough_3(array, limit):
+    return all(a <= limit for a in array)
+
 def main():
     print(small_enough([1, 2, 3, 4], 4))
     print(small_enough([1, 2, 3, 4], 3))
